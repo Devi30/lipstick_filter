@@ -30,3 +30,5 @@ function gotposes(results){
 }
 function take_Snapshot(){
     save("myFilter.png")
+}
+
