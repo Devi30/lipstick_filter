@@ -1,5 +1,7 @@
+lipsx=0
+lipsy-0
 function preload(){
-
+lipstick=loadImage("https://i.postimg.cc/PxFvYgkv/l1.png")
 }
 function setup (){
     canvas=createCanvas(300,300)
@@ -12,6 +14,7 @@ function setup (){
 }
 function draw(){
     image (video,160,160,300,300)
+    image(lipstick,lipsx,lipsy,50,50)
 }
 function modelloaded(){
     console.log("posenet is loaded")
@@ -21,8 +24,9 @@ function gotposes(results){
         console.log(results)
         console.log("lipsx="+results[0].pose.lips.x)
         console.log("lipsy="+results[0].pose.lips.y)
+         lipsx=results[0].pose.lips.x-20
+         lipsy=results[0].pose.lips.y-20
     }
 }
 function take_Snapshot(){
     save("myFilter.png")
-}
