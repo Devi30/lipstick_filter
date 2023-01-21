@@ -1,5 +1,5 @@
-lipsx=0
-lipsy-0
+nosex=0
+nosey-0
 function preload(){
 lipstick=loadImage("https://i.postimg.cc/PxFvYgkv/l1.png")
 }
@@ -24,8 +24,8 @@ function gotposes(results){
         console.log(results)
         console.log("nosex="+results[0].pose.lips.x)
         console.log("nosey="+results[0].pose.lips.y)
-         lipsx=results[0].pose.lips.x-20
-         lipsy=results[0].pose.lips.y+50
+         nosex=results[0].pose.lips.x-20
+         nosey=results[0].pose.lips.y+50
     }
 }
 function take_Snapshot(){
