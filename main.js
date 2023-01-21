@@ -1,5 +1,5 @@
 nosex=0
-nosey-0
+nosey=0
 function preload(){
 lipstick=loadImage("https://i.postimg.cc/PxFvYgkv/l1.png")
 }
@@ -22,10 +22,10 @@ function modelloaded(){
 function gotposes(results){
     if(results.length>0){
         console.log(results)
-        console.log("nosex="+results[0].pose.lips.x)
-        console.log("nosey="+results[0].pose.lips.y)
-         nosex=results[0].pose.lips.x-20
-         nosey=results[0].pose.lips.y+50
+        console.log("nosex="+results[0].pose.nose.x)
+        console.log("nosey="+results[0].pose.nose.y)
+         nosex=results[0].pose.nose.x-20
+         nosey=results[0].pose.noses.y+50
     }
 }
 function take_Snapshot(){
