@@ -14,7 +14,7 @@ function setup (){
 }
 function draw(){
     image (video,160,160,300,300)
-    image(lipstick,lipsx,lipsy,50,50)
+    image(lipstick,nosex,nosey,50,50)
 }
 function modelloaded(){
     console.log("posenet is loaded")
@@ -22,10 +22,10 @@ function modelloaded(){
 function gotposes(results){
     if(results.length>0){
         console.log(results)
-        console.log("lipsx="+results[0].pose.lips.x)
-        console.log("lipsy="+results[0].pose.lips.y)
+        console.log("nosex="+results[0].pose.lips.x)
+        console.log("nosey="+results[0].pose.lips.y)
          lipsx=results[0].pose.lips.x-20
-         lipsy=results[0].pose.lips.y-20
+         lipsy=results[0].pose.lips.y-50
     }
 }
 function take_Snapshot(){
