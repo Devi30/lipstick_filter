@@ -13,7 +13,7 @@ function setup (){
     posenet.on('pose', gotposes)
 }
 function draw(){
-    image (video,160,160,300,300)
+    image (video,0,0,300,300)
     image(lipstick,nosex,nosey,50,50)
 }
 function modelloaded(){
