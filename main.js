@@ -25,7 +25,7 @@ function gotposes(results){
         console.log("nosex="+results[0].pose.nose.x)
         console.log("nosey="+results[0].pose.nose.y)
          nosex=results[0].pose.nose.x-20
-         nosey=results[0].pose.noses.y+50
+         nosey=results[0].pose.nose.y+50
     }
 }
 function take_Snapshot(){
